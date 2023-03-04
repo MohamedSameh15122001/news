@@ -10,6 +10,7 @@ class Business extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    internetConection(context);
     return BlocConsumer<MainCubit, MainState>(
       bloc: MainCubit.get(context)..getCategory('business'),
       listener: (context, state) {},

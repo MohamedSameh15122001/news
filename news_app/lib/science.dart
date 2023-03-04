@@ -1,4 +1,4 @@
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/component.dart';
 
@@ -10,6 +10,7 @@ class Science extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    internetConection(context);
     return BlocConsumer<MainCubit, MainState>(
       bloc: MainCubit.get(context)..getCategory('science'),
       listener: (context, state) {},

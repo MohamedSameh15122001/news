@@ -11,6 +11,7 @@ class Search extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    internetConection(context);
     return BlocConsumer<MainCubit, MainState>(
       listener: (context, state) {},
       builder: (context, state) {
