@@ -19,13 +19,13 @@ class MainCubit extends Cubit<MainState> {
   List<BottomNavigationBarItem> bottomItems = [
     const BottomNavigationBarItem(
       icon: Icon(
-        Icons.business,
+        Icons.all_inbox,
       ),
-      label: 'Business',
+      label: '   Top Headlines',
     ),
     const BottomNavigationBarItem(
       icon: Icon(
-        Icons.sports,
+        Icons.sports_soccer_rounded,
       ),
       label: 'Sports',
     ),
@@ -37,17 +37,17 @@ class MainCubit extends Cubit<MainState> {
     ),
     const BottomNavigationBarItem(
       icon: Icon(
-        Icons.all_inbox,
+        Icons.business,
       ),
-      label: 'Top Headlines',
+      label: 'Business',
     ),
   ];
 
   List<Widget> screens = [
-    const Business(),
+    const TopHeadlines(),
     const Sports(),
     const Science(),
-    const TopHeadlines(),
+    const Business(),
   ];
 
   void changeBottomNavBar(int index) {
